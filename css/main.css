@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Orelega One", cursive;
+}
+
+img {
+  width: 30px;
+  margin: 3px;
+}
+
+h3,
+h5,
+h4 {
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 3em;
+  font-family: "Orelega One", cursive;
+  text-decoration: line-through;
+}
+
+.background {
+  height: 100vh;
+  background: linear-gradient(rgb(130, 156, 158), rgb(80, 129, 235));
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.display {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.board {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 300px;
+}
+
+.cell {
+  border: 2px solid white;
+  min-width: 100px;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  cursor: pointer;
+  color: white;
+}
+
+.cell:hover {
+  background: rgba(55, 2, 200, 0.5);
+}
+
+.playerX {
+  color: red;
+}
+
+.playerO {
+  color: green;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+#reset {
+  background-color: white;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 20px;
+  font-size: 15px;
+  width: fit-content;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 20px;
+  font-size: 15px;
+  width: fit-content;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Pop-Up */
+.display {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.pop h5 {
+  font-size: 1.5em;
+  margin-top: 5%;
+  font-family: "Orelega One", cursive;
+}
+
+.pop {
+  border: 5px solid rgb(60, 15, 65);
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 45%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 30px;
+}
