@@ -21,7 +21,6 @@ h4 {
 h4 {
   font-size: 3em;
   font-family: "Orelega One", cursive;
-  text-decoration: line-through;
 }
 
 .background {
@@ -73,14 +72,6 @@ h1 {
 
 .cell:hover {
   background: rgba(55, 2, 200, 0.5);
-}
-
-.playerX {
-  color: red;
-}
-
-.playerO {
-  color: green;
 }
 
 .controls {
