@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     [2, 4, 6],
   ]
 
+  function addColor(cell) {
+    if (currentPlayer == "X") {
+      cell.style.color = "red"
+    }
+  }
+
   const handleCellClick = (cell, index) => {
     if (boardState[index] !== "" || !gameActive) return
 
@@ -28,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     checkResult()
     switchPlayer()
+    addColor(cell)
   }
 
   const switchPlayer = () => {
